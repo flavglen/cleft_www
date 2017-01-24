@@ -129,9 +129,10 @@ App.factory('cleftdb', function($cordovaSQLite, DB) {
   },
 
   /*GET CONF DATES BY HALL NAME*/
-  self.getConfDatesByHallName = function(hallName,dates) {
-     var parameters = [hallName,dates];
-    return DB.query("select *  from cleft_master where Hall=(?) AND datetimev=(?)",parameters)
+  self.getConfDatesByHallName = function(hallName,dates,email) {
+     var parameters = [hallName,dates,email];
+    /*return DB.query("select *  from cleft_master where Hall=(?) AND datetimev=(?)",parameters)*/
+    return DB.query("select *  from cleft_master  CM LEFT JOIN attending ATN ON ATN.fk_cleft = CM.pk_cleft where CM.Hall=(?) AND CM.datetimev=(?) AND CM.email!=(?)",parameters)
       .then(function(result){
          return DB.getAll(result);
       });
@@ -155,6 +156,22 @@ App.factory('cleftdb', function($cordovaSQLite, DB) {
       });
   }
 
+  /*ADD TO ATTENDING TABLE*/
+   self.attendTalk = function(pk_cleft) {
+     var parameters = [pk_cleft];
+     return DB.query("insert into attending (fk_cleft) VALUES(?) ",parameters);
+  }
+
+  /*CHECK ALREADY ATTENDING EVENT/TALKK*/
+  self.alreadyAttending = function(pk_cleft) {
+     var parameters = [pk_cleft];
+    return DB.query("select count(*) as counts  from attending where fk_cleft=(?)",parameters)
+      .then(function(result){
+         return DB.getAll(result);
+      });
+  }
+
+  
 
 
   return self;

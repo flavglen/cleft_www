@@ -199,13 +199,13 @@ $scope.loginSkip=function(){
 })
 
 
-.controller('ConHallCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb) {
+.controller('ConHallCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb,$rootScope) {
 
   $scope.talkList={};
 
        $scope.loadTalks=function(dates){
 
-           cleftdb.getConfDatesByHallName($stateParams.hallname,dates).then(function(result){
+           cleftdb.getConfDatesByHallName($stateParams.hallname,dates,$rootScope.userEmail).then(function(result){
                  $scope.talkList=result;
                  console.log(result);
             },function (error) {
@@ -218,8 +218,7 @@ $scope.loginSkip=function(){
 .controller('singleTalkDetailCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb) {
 
   var pk_talk=$stateParams.talkid;
-
-  console.log(pk_talk);
+  $scope.attendingTalk=false;
 
   cleftdb.getSingleTalkDetail(pk_talk).then(function(result){
 
@@ -230,6 +229,43 @@ $scope.loginSkip=function(){
       },function (error) {
           alert(error);
      });
+
+
+  /*CHECK ALREADY ATTENDING*/
+     cleftdb.alreadyAttending(pk_talk).then(function(result){
+           if(result[0]['counts']>0){
+            $scope.attendingTalk=true;
+           }
+        },function (error) {
+            alert(error);
+    });
+
+ /*WHEN USER CLICKS ATTTENDING**/
+  $scope.attendTalk=function(pk_cleft){
+    
+     /*INSERT INTO ATTENDING*/
+      cleftdb.attendTalk(pk_cleft).then(function(result){
+        $scope.attendingTalk=true;
+      },function (error) {
+          alert(error);
+     });
+
+
+  }
+
+
+function checkAttending(pk_cleft){
+  /*CHECK ALREADY ATTENDING*/
+
+  cleftdb.alreadyAttending(pk_cleft).then(function(result){
+
+         console.log(result);
+
+      },function (error) {
+          alert(error);
+  });
+}
+
 
 })
 

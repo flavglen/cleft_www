@@ -10,7 +10,7 @@
 				  <p class="comit_loc"><span>Time: </span>{{talkDetail[0]['Duration']}}</p>
 				  <p class="comit_loc"><span>Date: </span>{{talkDetail[0]['Day']}}</p>
 				  <p class="comit_loc"><span>Hall: </span>{{talkDetail[0]['Hall']}}</p>
-				  <button class="my_attending for_all_talk_detail">Attend?</button>
+				  <button  ng-hide="attendingTalk" ng-click="attendTalk(talkDetail[0]['pk_cleft'])" class="my_attending for_all_talk_detail">Attend?</button>
 			    </div>
 			  </div> 
 			</div>

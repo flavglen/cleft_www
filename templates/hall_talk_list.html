@@ -46,7 +46,7 @@
 			    <div class="item item-body committee_outer">
 				  <h3><b>{{taskl.title}}</b></h3>
 				  <p class="comit_loc"><span>By: </span>{{taskl.Name}}</p>
-				  <p class="my_attending">Attending</p>
+				  <p ng-if="taskl.fk_cleft" class="my_attending">Attending</p>
 			    </div>
 			  </div> 
 			</div>
