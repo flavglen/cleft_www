@@ -1,0 +1,35 @@
+<ion-view view-title="Hall">
+    <ion-content>
+      
+	    
+	    <div  ng-repeat="hall in halls"   ng-if="$even" class = "row home_row_comittee for_my_hall">	 
+         
+         <div class = "col col-50 text-center " ui-sref="app.hall_talk_list({hallname:halls[$index]['Hall']})" >	 
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h2><b>{{halls[$index]['Hall']}}</b></h2>
+			    </div>
+			  </div> 
+			</div>
+		<!-- 	 ui-sref="app.hall_talk_list" -->
+			<div class = "col col-50 text-center"  ui-sref="app.hall_talk_list({hallname:halls[$index+1]['Hall']})" >	 
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h2><b>{{halls[$index+1]['Hall']}}</b></h2>
+			    </div>
+			  </div> 
+			</div>
+			
+	    </div>
+	    
+	    
+
+	    
+	    
+    </ion-content>
+</ion-view>
+
+  
+
+
+  

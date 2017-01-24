@@ -1,0 +1,702 @@
+/* Empty. Add your own CSS if you like */
+/*ABOUT US*/
+.mynavList{
+    list-style-type: disc !important
+}
+
+.validation{
+    color:red;
+}
+.mynavOList > li{
+    padding-bottom: 8px;
+}
+
+.home_button .button.button-positive {
+    background-color: #094f94;
+    color: #fff;
+    font-size: 14px;
+    height: 120px;
+    width: 100%;
+}
+.row.home_row {
+    margin-top: 10px;
+}
+
+.list:last-child.card {
+    margin-bottom: 0px;
+}
+.card, .list-inset {
+    overflow: hidden;
+    margin: 0px 2px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.menu_links a.item-content {
+    padding: 0 !important;
+   
+}
+.menu_links {
+   
+    border-width: 0;
+   
+}
+h2.con_head {
+    padding-bottom: 6px;
+    padding-top: 10px;
+    white-space: normal;
+}
+}
+.con_content {
+    border-width: 0;
+    padding: 0 0 9px;
+}
+.item.item-button-right.con_list {
+   
+    padding-right: 45px;
+}
+.con_button {
+    border-color: transparent;
+    background-color: #f8f8f8;
+    color: #444;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    min-width: 31px;
+    min-height: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.col.butt_col button {
+    font-size: 15px;
+    padding: 0 4px;
+    position: relative;
+    right: 14px;
+    top: 55px;
+    z-index: 999;
+}
+.item.item-button-right.ibe_content {
+    padding: 10px;
+    box-shadow: 2px 6px 4px 1px rgba(0, 0, 0, 0.47);
+}
+.endo_button{
+background-color:#6d86cb !important;
+
+}
+p.ibe_con {
+    line-height: 25px;
+    padding: 10px 15px;
+    text-align: justify  !important;
+}
+.home_button.jour .button.button-positive {
+    height: 40px;
+    width: 100%;
+}
+.ibe_con.for_top {
+    text-align: center !important;
+}
+.con_head.text-center.contact_head {
+    color: #a8a822;
+    padding: 15px 2px;
+}
+.item-text-wrap.con_content.text-center.item p {
+    text-align: inherit;
+}
+.item.item-button-right.contact_content {
+    border: 0 none;
+    padding: 5px;
+}
+.item.item-button-right.contact_content .row {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 2px 6px 4px 1px rgba(0, 0, 0, 0.47);
+}
+.full-image.con_manager {
+    width: 100%;
+}
+.full-image.home_icons {
+    height: 45px;
+    position: relative;
+    top: 17px;
+    width: 45px;
+}
+.row.home_row.home_slider {
+    border-radius: 37px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+.logo_box.item {
+    padding: 15px 30px 35px;
+}
+.main_menu .item-content {
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+    padding: 0 0 10px !important;
+}
+ion-side-menu {
+    background-color: #FF6600 !important;
+}
+
+.row.home_button {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.full-image.home_icons_menu {
+    height: 25px;
+    left: 12px;
+    position: relative;
+    top: 8px;
+    width: 25px;
+}
+.icon.ion-ios-arrow-back {
+    color: #fff;
+}
+.back-text {
+    color: #fff;
+}
+
+.main_menu .item-complex .item-content, .item-radio .item-content {
+    background-color: transparent !important;
+}
+
+.main_menu .item {
+    background-color: #FF6600 !important;
+    border: 0 none !important;
+    padding: 8px 2px;
+}
+
+.full-image.home_icons {
+    height: 50px;
+    position: relative;
+    top: 17px;
+    width: 60px;
+}
+.login_page .item{
+    background-color: transparent;
+    border: 0 none !important;
+    padding-top: 0px !important;
+}
+.login_page .scroll {
+    background-color: transparent; !important;
+    bottom: 0;
+   
+    position: absolute;
+    width: 100%;
+}
+.login_page .list {
+    background-color: transparent !important;
+  
+    height: 255px;
+}
+.login_heading .item-text-wrap.text-center.item {
+    background: transparent none repeat scroll 0 0 !important;
+    border: 0 none !important;
+    padding-top: 65px;
+}
+
+.con_list .row {
+    margin-bottom: 7px !important;
+}
+ion-header-bar {
+    background-color: #FF6600 !important;
+    height: 45px !important;
+}
+.bar.bar-stable .title{
+     color: #fff !important;
+      left:0 !important;
+      text-align:center;
+}
+.title.title-center.header-item {
+    color: #fff !important;
+    font-size: 21px;
+    left:0 !important;
+}
+.left-buttons .button.button-icon.button-clear.ion-navicon {
+    color: #fff;
+}
+.endo_hyper.item.item-complex {
+    border: 0 none;
+    height: 55px;
+}
+.row.contact_row {
+    padding: 5px 0 !important;
+}
+.contact_icon_row img {
+    width: 90px;
+}
+.home_row_comittee .list.card {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 6px 4px 1px rgba(0, 0, 0, 0.47) !important;
+}
+.list.card.committee_card{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	 box-shadow: 2px 6px 4px 1px rgba(0, 0, 0, 0.47) !important;
+}
+.contact_row .col {
+    padding: 5px 0 !important;
+}
+.button.button-positive.endo_sub_button {
+    background-color: #094f94;
+    padding: 5px 20px;
+}
+
+.endo_hyper.item.item-complex {
+    padding: 10px 40px 0;
+}
+.row.contact_icon_row {
+    border: 0 none !important;
+    box-shadow: none !important;
+    margin-bottom: 1px !important;
+    padding: 0 !important;
+}
+.contact_icon_row .col {
+    padding:13px 2px 7px ;
+}
+.col_con_icon{
+padding:0px 2px 7px !important;
+}
+.contact_icon_row .item-text-wrap.text-center.item {
+    border: 0 none !important;
+    padding: 0 !important;
+}
+.button.button-positive.con_button {
+    left: -14px;
+    position: relative;
+    top: 7px;
+}
+.con_ion.item.item-complex {
+    border: 0 none;
+}
+.item-text-wrap.con_content.item {
+    padding: 0;
+}
+.item-text-wrap.con_content.mission_con.text-center.item {
+    border: 0 none;
+}
+.member_con{
+ border: 0 none;
+}
+.item.item-body.committee_outer {
+    padding: 0;
+}
+
+.committee_outer h3 {
+    margin-bottom: 15px !important;
+}
+.skip_button a {
+    background-color: transparent !important;
+    border: 0 none !important;
+    bottom: 8px;
+    color: #fff !important;
+    padding: 4px 0 !important;
+    position: relative;
+    text-align: center;
+}
+.login_page .input-label {
+    color: #000;
+}
+.login_page input {
+    border-bottom: 1px solid #fff;
+    margin-right: 21px;
+    color: #fff !important;
+
+}
+.login_page .input-label {
+    color: #fff !important;
+    width: 27% !important;
+}
+
+.col.home_col {
+    padding: 5px 10px !important;
+}
+.con_content img {
+    width: 20px;
+}
+.for_venu {
+    background-attachment: fixed !important;
+    background-image: url("/img/slider_1.jpg") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    padding:0 !important;
+    margin-top: 30px;
+}
+.for_venu  h2 {
+    color: #028fcc;
+    padding: 25px 10px 10px;
+    text-align: center;
+}
+.for_venu .card, .list-inset {
+    background-color: transparent !important;
+   
+}
+.for_venu .item {
+    background-color: transparent !important;
+ }
+ .for_venu p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.for_bg {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 60px !important
+}
+.ytp-title-link.yt-uix-sessionlink {
+    padding-top: 5px !important;
+}
+.full-image.for_flag {
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 0 40px;
+}
+
+.all_downloads a {
+    background-color: #028fcc !important;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 20px;
+    margin: 4px;
+}
+.all_downloads ion-item {
+    margin-top: 25px;
+}
+.last_ind h3 {
+    margin-bottom: 20px !important;
+}
+.exhibit_row h2 {
+    color: #028fcc !important;
+    font-size: 20px;
+}
+.exhibit_row p {
+    padding-bottom: 30px;
+    text-align: center !important;
+}
+.exhibit_row h3 {
+    font-size: 15px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+.exhibit_row li {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+.last_exit {
+    padding-bottom: 20px !important;
+    padding-top: 30px;
+}
+.exhibit_row ul {
+    list-style: inside !important;
+    padding: 0 20px;
+}
+
+.abst > li {
+    list-style-type: none;
+}
+.stud_ab > li {
+    list-style-type: none;
+}
+
+
+.for_org_com p:nth-child(3) {
+    background-color: #028FCC;
+    color: #fff;
+    padding: 15px 3px;
+}
+.row.contact_row {
+    display: block !important;
+}
+.for_reg_bod .item-text-wrap.con_content.text-center.item {
+    border: 0 none;
+    padding-top: 20px;
+}
+.row.contact_content.for_reg_only {
+    background-color: #028fcc;
+}
+.for_reg_only .item-text-wrap.con_content.text-center.item {
+    background-color:  #028fcc;
+}
+.for_reg_only h3 {
+    color: #fff;
+}
+.for_reg_only li {
+    color: #fff;
+    list-style-type: none;
+}
+.for_reg_bod li {
+    list-style-type: none;
+    text-align: center;
+}
+.to_more_read p {
+    white-space: normal !important;
+}
+.row.home_row_comittee.all_downloads.to_more_read {
+    padding-top: 25px;
+}
+.to_more_read a {
+    padding: 16px !important;
+}
+.for_venu.for_tour {
+    background: transparent none repeat scroll 0 0 !important;
+    margin-top: 0;
+}
+.for_tour .for_bg {
+    background-color: #000 !important;
+    padding: 10px 60px !important;
+}
+.for_tour.for_venu h2 {
+   
+    font-size: 20px !important;
+   
+}
+.for_tour.for_venu p {
+    
+    text-align: center !important;
+}
+
+.title.title-center.header-item {
+    color: #fff !important;
+    /*left: 45px !important;
+    right: 45px !important;*/
+}
+
+
+/*Taskforce*/
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* New styles for Cleft starts here 25-12-2016 */
+
+
+.full-image.sub_logo_img {
+    height: 100px;
+    width: 100px;
+}
+.full-image.main_logo_img {
+    width: 150px;
+}
+.login_page {
+    background-image: url("../img/login_bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login_bg_cover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.login_heading p {
+    color: #FF6600;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 25px;
+    padding-bottom: 15px !important;
+    padding-top: 20px;
+}
+.full-image.menu_logo {
+    left: 50px;
+    padding: 0 15px;
+    position: relative;
+    top: 0;
+    width: 65%;
+}
+.login_page .button.button-block.button-positive {
+    background-color: #FF6600 !important;
+}
+.con_head.endo_head.text-center {
+    color: #46a96c;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.home_row_comittee .full-image {
+    margin-top: 15px;
+    width: 40%;
+}
+.committee_outer.for_home_page h2 {
+    background-color: #ff6600;
+    color: #fff;
+    height: 125px;
+    line-height: 25px;
+    margin: 0 0 15px;
+    padding: 13px;
+}
+.committee_outer h2 {
+    background-color: #ff6600;
+    color: #fff;
+    height: 130px;
+    line-height: 23px;
+    margin: 0 0 15px;
+    padding: 20px;
+}
+.comit_design {
+    color: #ff6600 !important;
+    font-weight: bolder !important;
+    margin-bottom: 5px !important;
+    margin-top: 7px !important;
+}
+.all_speakers h3 {
+    color: #46a96c !important;
+    font-size: 16px !important;
+    margin: 4px 0 !important;
+}
+.comit_loc {
+    color: #000 !important;
+    letter-spacing: 3px;
+    margin-top: 8px !important;
+}
+.all_speakers .list {
+    min-height: 250px;
+}
+.sci_com_speakers .list.card {
+    min-height: 130px !important;
+}
+.sci_com_speakers .item.item-body.committee_outer {
+    padding-top: 30px;
+}
+.for_upgrade {
+    position: relative !important;
+}
+.for_tours_img .full-image {
+    margin-top: 0 !important;
+    padding: 5px;
+    width: 100% !important;
+}
+.col.text-center.for_tours_img {
+    background-color: rgb(255, 102, 0);
+    margin: 5px;
+}
+
+.greenColor{
+    
+        color: #088D3C;
+        font-weight:bold;
+}
+/* New styles for Cleft ends here 25-12-2016 */
+
+
+/* New styles for Cleft starts here 30-12-2016 Prajwal */
+
+
+.all_speakers.ex_comm .list {
+    min-height: 180px !important;
+}
+.advic_committee_outer h2 {
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 14px;
+    height: 0;
+    line-height: 14px;
+    margin: 0;
+    padding: 18px 20px;
+}
+.advic_committee_outer h2:last-child {
+    padding-bottom: 35px;
+}
+.only_faculty_image{
+	width:100% !important;
+	margin-top:0 !important;
+	padding:15px;
+}
+.all_speakers.faculty_outer_cover .list {
+    min-height: 330px !important;
+}
+.scientific_block h2 {
+    padding: 55px 20px;
+}
+.all_speaker_listing h3 {
+    color: #46a96c !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.all_speaker_listing p {
+    text-align: left;
+}
+.all_speaker_listing .list {
+    min-height: 115px;
+    padding: 10px;
+}
+.tab-nav.tabs {
+    height: 45px;
+    margin-top: 45px;
+    padding: 15px 0;
+    top: 0;
+}
+.tab-item {
+    font-size: 15px !important;
+}
+.row.home_row_comittee.all_speakers.all_speaker_listing.full_talk_list.pane.tab-content {
+    margin-top: 90px;
+}
+.my_attending {
+    background-color: rgb(255, 102, 0);
+    border-radius: 2px;
+    color: #7adda0 !important;
+    float: right;
+    margin-top: 0 !important;
+    padding: 5px;
+    text-align: center !important;
+    width: 100px;
+}
+.my_attending.for_all_talk_detail{
+    background-color: rgb(255, 102, 0);
+    border: 0 none;
+    border-radius: 2px;
+    color: #fff !important;
+    float: right;
+    margin-top: 0 !important;
+    padding: 11px;
+    text-align: center !important;
+    width: 100%;
+}
+.for_my_hall h2 {
+    padding: 55px 20px;
+}
+.for_tours_img .item-complex .item-content, .item-radio .item-content {
+    padding: 0;
+}
+
+/* New styles for Cleft ends here 30-12-2016 Prajwal */

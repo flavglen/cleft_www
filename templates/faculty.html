@@ -1,0 +1,22 @@
+<ion-view view-title="faculty">
+   <ion-content>       
+   <h2 class="con_head endo_head text-center"><b>Invited Faculty</b></h2>
+
+
+   	 <div class = "row home_row_comittee all_speakers  faculty_outer_cover" style="flex-wrap: wrap;">	 
+         <div class = "col col-50 text-center" ng-repeat="faculty in facultyArray">
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				   <img width="120" height="200" class="full-image only_faculty_image" src="{{faculty.imageurl}}">
+				    <h3><b>{{faculty.name}}</b></h3>
+				  <p class="comit_design">{{faculty.Specialization}}</p>
+				 
+				  <p class="comit_loc">{{faculty.country}}</p>
+			    </div>
+			  </div> 
+			</div>
+	    </div>
+
+
+</ion-content>
+</ion-view>

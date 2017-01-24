@@ -1,0 +1,77 @@
+<ion-view view-title="Talks">
+ 
+<ion-tabs class="tabs-positive tabs-icon-top">
+
+
+<!--  ng-click="loadTalks('2017-01-22')" -->
+  <ion-tab title="8th Feb" on-select="loadTalks('2017-02-08')">
+  
+     <div  style="margin-top: 90px;"  class = "row home_row_comittee all_speakers all_speaker_listing full_talk_list">
+         <div  ng-show="talkList.length > 0" class = "col text-center"  ng-repeat="taskl in talkList" ui-sref="app.talk_full_detail({talkid:taskl.pk_cleft})">
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h3><b>{{taskl.title}}</b></h3>
+				  <p class="comit_loc"><span>By: </span>{{taskl.Name}}</p>
+				  <p class="my_attending">Attending</p>
+			    </div>
+			  </div> 
+			</div>
+			<p ng-show="talkList.length <=0"> No talks for this Date and Hall</p>
+	  </div>
+
+  </ion-tab>
+
+  <ion-tab title="9th Feb"  on-select="loadTalks('2017-02-09')">
+    <div style="margin-top: 90px;"  class = "row home_row_comittee all_speakers all_speaker_listing full_talk_list">
+         <div  ng-show="talkList.length > 0" class = "col col-100 text-center"  ng-repeat="taskl in talkList" ui-sref="app.talk_full_detail({talkid:taskl.pk_cleft})" >
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h3><b>{{taskl.title}}</b></h3>
+				  <p class="comit_loc"><span>By: </span>{{taskl.Name}}</p>
+				  <p class="my_attending">Attending</p>
+			    </div>
+			  </div> 
+			</div>
+			  <p ng-show="talkList.length <=0"> No talks for this Date and Hall</p>
+	     </div>
+
+	     
+
+  </ion-tab>
+
+  <ion-tab title="10th Feb" on-select="loadTalks('2017-02-10')">
+   <div style="margin-top: 90px;" class = " home_row_comittee all_speakers all_speaker_listing full_talk_list">
+         <div ng-show="talkList.length > 0" class = "row col text-center" ng-repeat="taskl in talkList" ui-sref="app.talk_full_detail({talkid:taskl.pk_cleft})">
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h3><b>{{taskl.title}}</b></h3>
+				  <p class="comit_loc"><span>By: </span>{{taskl.Name}}</p>
+				  <p class="my_attending">Attending</p>
+			    </div>
+			  </div> 
+			</div>
+			 <p ng-show="talkList.length <=0"> No talks for this Date and Hall</p>
+	     </div>
+	     
+  </ion-tab>
+  
+  <ion-tab title="11th Feb" on-select="loadTalks('2017-02-11')">
+    <div style="margin-top: 90px;" class = "row home_row_comittee all_speakers all_speaker_listing full_talk_list">
+         <div ng-show="talkList.length > 0" class = "col text-center" ng-repeat="taskl in talkList" ui-sref="app.talk_full_detail({talkid:taskl.pk_cleft})">
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h3><b>{{taskl.title}}</b></h3>
+				  <p class="comit_loc"><span>By: </span>{{taskl.Name}}</p>
+				  <p class="my_attending">Attending</p>
+			    </div>
+			  </div> 
+			</div>
+			<p ng-show="talkList.length <=0"> No talks for this Date and Hall</p>
+	     </div>
+	       
+  </ion-tab>
+
+</ion-tabs>
+
+ 
+</ion-view>

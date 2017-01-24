@@ -1,0 +1,114 @@
+<ion-view view-title="Program">
+
+<ion-header-bar class="bar-dark">
+  <button class="button button-icon" ng-click="toggleSideMenu()">
+    <i class="icon ion-navicon"></i>
+  </button>
+
+</ion-header-bar>
+
+  <ion-content  scroll="true">
+ 
+<div class = "col home_col">
+
+
+ <div class="list">
+   <div class="item item-button-right ibe_content">
+ 
+   <h2 class="con_head endo_head text-center"><b>Program</b><h2>
+   
+   <ion-item class="item-text-wrap  text-center">
+	
+	<p class="ibe_con for_top">It gives us great pleasure to welcome all cleft care professionals around the globe, for the next edition of the <b>International Cleft Congress to be held at Chennai, India, in Feb 2017</b>. We hope to provide a platform for all voices involved in cleft care and keeping this in mind, the theme of this congress has been drafted as</p>
+	
+   <p class="ibe_con for_top"><b>Think, Treat and Teach</b></b></p>
+   
+   <p class="ibe_con for_top">The prevention and management of cleft and craniofacial deformities is a huge challenge involving multiple disciplines. There is a constant churn in thought processes, techniques and assessment of outcomes, which makes any interdisciplinary meet a very interesting one. We hope professionals, cutting across disciplines will come to Chennai and share their thoughts, experience and knowledge, so that all of us can go back home enriched, with ideas to implement, eventually benefiting the cleft population as a whole.</b></p>
+   
+   <p class="ibe_con for_top">We have initiated a number of measures to make this a memorable scientific event for all concerned. One of the important steps in this direction is the <b>Task Force 2017</b>. This is a continuation and expansion of the admirable work carried out during the previous edition at Orlando in 2013. The various task forces which will carry out their work in this period leading up to the 2017 meeting, presenting their recommendations at the Chennai meeting are as follows:</b></p>
+   
+   <p class="ibe_con for_top"><ul>
+<li>Beyond Eurocleft </li>
+<li>Holistic Outcomes </li>
+<li>Speech therapy without speech therapists </li>
+<li>Palate repair in speaking individuals with cleft </li>
+<li>Speech Assessment </li>
+<li>Cleft Epidemiology and prevention </li>
+<li>
+Cleft without caries
+<br>
+</li>
+</ul></b></p>
+   
+   <p class="ibe_con for_top">There are a large number of enthusiastic and committed people already working on these projects, and if any one of you is interested in knowing more about these and contributing to them, you may contact the scientific chairman.</b></p>
+   
+   <p class="ibe_con for_top">The organising committee for this meeting is a young and dynamic body and will leave no stone unturned to make this meeting a scientifically meaningful one. Please join us with all your scientific contributions, so that the discipline and the people we serve are enriched.</b></p>
+	  
+	
+	<p class="ibe_con for_top"><b>All suggestions are welcome for scientific program for this congress. Please contact us any time.</b></p>
+	
+	  <div class = "row home_row_comittee all_speakers  ex_comm">	 
+        
+         <div class = "col text-center">
+			<div class="list card">
+			    <div class="item item-body committee_outer">
+				   <img class="full-image" src="https://www.cleft2017.org/media/dr_krishnamurthy_bonanthaya.jpg">
+				  <p class="comit_design">Treasurer</p>
+				  <h3><b>Krishnamurthy Bonanthaya</b></h3>
+				  <br>
+				  <p class="comit_loc">Hope to see you all at Cleft Congress 2017,</p>
+				  <p class="comit_loc">With warm regards,</p>
+				  <p class="comit_loc">Dr. Krishnamurthy Bonanthaya.</p>
+				  
+				  <br>
+			    </div>
+			  </div> 
+		 </div>
+		 
+	 </div>	 
+		 
+	
+	  
+
+   </ion-item>
+
+
+
+   </div>
+ </div>
+</div>
+
+
+ 
+ <div class="for_venu1">
+     <div class=""> <!--for_bg-->
+    
+     <div class = "row">	
+          <div class="col"> 
+	              <ion-list>
+				        <div ng-repeat="group in groups">
+				          <ion-item class="item-stable"
+				                    ng-click="toggleGroup(group)"
+				                    ng-class="{active: isGroupShown(group)}">
+				              <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+				            &nbsp;
+				             {{group.name}}
+				          </ion-item>
+				          <ion-item class="item-accordion" ng-show="isGroupShown(group)">
+				           <div class="item item-body">
+				  
+										<div  ng-include="templateurl+group.htmlfile"></div>
+				                  
+				                   </div>
+ 									
+				          </ion-item>
+				        </div>
+				</ion-list>
+			</div>
+							
+	 </div>		
+		</div>
+	 </div>  
+	 
+  </ion-content>
+</ion-view>

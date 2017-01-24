@@ -1,0 +1,110 @@
+<ion-view view-title="Task Force">
+
+<ion-header-bar class="bar-dark">
+  <button class="button button-icon" ng-click="toggleSideMenu()">
+    <i class="icon ion-navicon"></i>
+  </button>
+
+</ion-header-bar>
+
+  <ion-content  scroll="true">
+ 
+<div class = "col home_col">
+
+
+ <div class="list">
+   <div class="item item-button-right ibe_content">
+ 
+   <h2 class="con_head endo_head text-center"><b>INVITATION</b><h2>
+   
+   <ion-item class="item-text-wrap  text-center">
+	
+	<p class="ibe_con for_top"><b>Dear Friends and Colleagues!</b></p>
+	
+   <p class="ibe_con"><b>Introduction:</b> A series of task forces were established by ST Lee prior to the Singapore Congress of the International Confederation for Cleft Lip and Palate and Related Craniofacial Anomalies in 1997 and reintroduced for the 12th Congress in 2013. The task forces were derived from the “Objectives” of the International Confederation for Cleft Lip and Palate and Related Craniofacial Anomalies as enumerated in Section 2 of its constitution.</p>
+
+   <p class="ibe_con"><b>Task Forces according to Constitution of Confederation, </b>2.1 (B) Assisting and encouraging the establishment of internationally agreed standards and methods of assessment and documentation that will permit comparison of results of different methods of treatment worldwide. The reports of the 2013 Task Forces have been published online in The Cleft Palate-Craniofacial Journal (Vol. 51 Issue 6 (November 2014)) and also are linked on the International Confederation for Cleft Lip and Palate and Related Craniofacial Anomalies website.</p>
+
+   <p class="ibe_con">The enthusiasm for and activities of the Task Forces will be continued in 2017 with some modifications. Please fine the details of various Task Forces. If you wish to contribute or need information, please do not hesitate to contact us or you may contact chair or co-chair of concerned Task Force. </p>
+
+         
+	  
+	  <div class = "row home_row_comittee all_speakers  ex_comm">	 
+        
+         <div class = "col text-center">
+			<div class="list card">
+			    <div class="item item-body committee_outer">
+				   <img class="full-image" src="https://www.cleft2017.org/media/dr_jeffery_marsh.jpg">
+				  <p class="comit_design">Treasurer</p>
+				  <h3><b>Dr. Jeffrey Marsh</b></h3>
+				  <p class="comit_loc">USA</p>
+				  <p>cleft2017taskforce@gmail.com</p>
+				  <br>
+			    </div>
+			  </div> 
+		 </div>
+		 
+	 </div>	 
+		 
+	<div class = "row home_row_comittee all_speakers  ex_comm">	 	 
+		 <div class = "col text-center">
+			<div class="list card">
+			    <div class="item item-body committee_outer">
+				   <img class="full-image" src="https://www.cleft2017.org/media/jyotsna.jpg">
+				  <p class="comit_design">Treasurer</p>
+				  <h3><b>Dr. Jyotsna Murthy</b></h3>
+				  <p class="comit_loc">INDIA</p>
+				  <p>murthy.jyotsna@yahoo.com</p>
+				  <br>
+			    </div>
+			  </div> 
+		 </div>
+			
+			
+			
+	    </div>
+	  
+	  
+
+   </ion-item>
+
+
+
+   </div>
+ </div>
+</div>
+
+
+ 
+ <div class="for_venu1">
+     <div class=""> <!--for_bg-->
+     <h2 class="con_head endo_head text-center"><b>VENUE</b></h2>
+     <div class = "row">	
+          <div class="col"> 
+	              <ion-list>
+				        <div ng-repeat="group in groups">
+				          <ion-item class="item-stable"
+				                    ng-click="toggleGroup(group)"
+				                    ng-class="{active: isGroupShown(group)}">
+				              <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+				            &nbsp;
+				             {{group.name}}
+				          </ion-item>
+				          <ion-item class="item-accordion" ng-show="isGroupShown(group)">
+				           <div class="item item-body">
+				  
+										<div  ng-include="templateurl+group.htmlfile"></div>
+				                  
+				                   </div>
+ 									
+				          </ion-item>
+				        </div>
+				</ion-list>
+			</div>
+							
+	 </div>		
+		</div>
+	 </div>  
+	 
+  </ion-content>
+</ion-view>

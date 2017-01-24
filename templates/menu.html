@@ -1,0 +1,71 @@
+<ion-side-menus enable-menu-with-back-views="false" ng-controller="menuContrl">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable"  ng-style="{'color': 'red'}">
+      <ion-nav-back-button >
+      </ion-nav-back-button>
+
+
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" class="main_menu">
+    <ion-content>
+      <ion-list>
+       <img class="full-image menu_logo" src="img/cleft2017.png">
+       
+        <ion-item menu-close href="#" ui-sref="app.home">
+           <img class="full-image home_icons_menu" src="img/user.svg"> &nbsp;&nbsp;&nbsp;Hi, {{userName}}
+        </ion-item>
+
+        <ion-item menu-close href="#" ui-sref="app.home">
+           <img class="full-image home_icons_menu" src="img/home.png"> &nbsp;&nbsp;&nbsp;WELCOME
+        </ion-item>
+         <ion-item menu-close href="#" ui-sref="app.usefullinks">
+           <img class="full-image home_icons_menu" src="img/com.png"> &nbsp;&nbsp;&nbsp;ORGANISERS 
+        </ion-item>
+        <ion-item menu-close href="#" ui-sref="app.scientific">
+           <img class="full-image home_icons_menu" src="img/science.png"> &nbsp;&nbsp;&nbsp;SCIENTIFIC
+        </ion-item>
+        <ion-item menu-close href="#" ui-sref="app.taskforce">
+           <img class="full-image home_icons_menu" src="img/member.png"> &nbsp;&nbsp;&nbsp;TASK FORCE
+        </ion-item>
+        <ion-item menu-close href="#" ui-sref="app.faculty" >
+           <img class="full-image home_icons_menu" src="img/Businessman-icon-.png"> &nbsp;&nbsp;&nbsp;FACULTY
+        </ion-item>
+        <ion-item menu-close href="#" ui-sref="app.program">
+           <img class="full-image home_icons_menu" src="img/mission.png"> &nbsp;&nbsp;&nbsp;PROGRAM
+        </ion-item>
+         <ion-item menu-close href="#" ui-sref="app.venue">
+           <img class="full-image home_icons_menu" src="img/venue-map-icon.png"> &nbsp;&nbsp;&nbsp;VENUE
+        </ion-item>
+        <ion-item menu-close href="#" ui-sref="app.hospi"">
+           <img class="full-image home_icons_menu" src="img/tours.png"> &nbsp;&nbsp;&nbsp;TOURS
+        </ion-item>
+        <ion-item menu-close href="" ui-sref="app.contact">
+           <img class="full-image home_icons_menu" src="img/contact.png"> &nbsp;&nbsp;&nbsp;CONTACT
+        </ion-item>
+
+        <ion-item ng-click="logout()" menu-close>
+           <img class="full-image home_icons_menu" src="img/contact.png"> &nbsp;&nbsp;&nbsp;Logout
+        </ion-item>
+        
+      </ion-list>
+
+
+    <ion-footer-bar style="border:none;background:#028FCC" class="bar-stable for_upgrade">
+     <a style="color:#fff;left:5%;right:0;margin:0; width: 100%;position: fixed;" onclick="window.open('market://details?id=com.a1logics.apec2017', '_system', 'location=yes'); return false;" class="">
+        <b>Upgrade</b>
+      </a>
+      
+    </ion-footer-bar>
+
+
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

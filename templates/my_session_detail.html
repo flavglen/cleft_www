@@ -1,0 +1,25 @@
+<ion-view view-title="My Session">
+    <ion-content>
+        
+       <div ng-repeat="mySession in mySesionList" class = "home_row_comittee all_speakers all_speaker_listing full_talk_list">
+         <div class = "row col text-center"  >
+			  <div class="list card">
+			    <div class="item item-body committee_outer">
+				  <h3><b>{{mySession['Session']}}</b></h3>
+				  <p class="comit_loc"><span>Time: </span>{{mySession['Duration']}}</p>
+				  <p class="comit_loc"><span>Date: </span>{{mySession['Day']}}</p>
+				  <p class="comit_loc"><span>Hall: </span>{{mySession['hall']}}</p>
+			    </div>
+			  </div> 
+			</div>
+	     </div>
+
+	    
+
+    </ion-content>
+</ion-view>
+
+  
+
+
+  
