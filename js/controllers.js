@@ -181,11 +181,8 @@ $scope.loginSkip=function(){
 
 .controller('HalllistsCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb) {
 
-
     cleftdb.getHallList().then(function(result){
-
          $scope.halls=result;
-
       },function (error) {
             alert(error);
      });
@@ -215,6 +212,21 @@ $scope.loginSkip=function(){
 
 })
 
+/*BY HALL*/
+.controller('talkListCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb,$rootScope) {
+
+       $scope.talkList={};
+       $scope.loadTalks=function(dates){
+           cleftdb.getConfDatesByHallName('',dates,$rootScope.userEmail).then(function(result){
+                 $scope.talkList=result;
+                 console.log(result);
+            },function (error) {
+                alert(error);
+           });
+       }
+
+})
+
 .controller('MyattendCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb,$rootScope) {
 
 /*GET ALL MY ATTENDINF TALKS*/
@@ -235,11 +247,7 @@ $scope.loginSkip=function(){
   $scope.attendingTalk=false;
 
   cleftdb.getSingleTalkDetail(pk_talk).then(function(result){
-
          $scope.talkDetail=result;
-
-         console.log(result);
-
       },function (error) {
           alert(error);
      });

@@ -130,9 +130,21 @@ App.factory('cleftdb', function($cordovaSQLite, DB) {
 
   /*GET CONF DATES BY HALL NAME*/
   self.getConfDatesByHallName = function(hallName,dates,email) {
-     var parameters = [hallName,dates,email];
+     var hall = hallName || false;
+     var parameters = [];
+     var query='';
+
+     if(hall){
+      query="select *  from cleft_master  CM LEFT JOIN attending ATN ON ATN.fk_cleft = CM.pk_cleft where CM.Hall=(?) AND CM.datetimev=(?) AND CM.email!=(?)";
+      parameters = [hall,dates,email];
+     }
+     else{
+      query="select *  from cleft_master  CM LEFT JOIN attending ATN ON ATN.fk_cleft = CM.pk_cleft where  CM.datetimev=(?) AND CM.email!=(?)";
+      parameters = [dates,email];
+    }
+    
     /*return DB.query("select *  from cleft_master where Hall=(?) AND datetimev=(?)",parameters)*/
-    return DB.query("select *  from cleft_master  CM LEFT JOIN attending ATN ON ATN.fk_cleft = CM.pk_cleft where CM.Hall=(?) AND CM.datetimev=(?) AND CM.email!=(?)",parameters)
+    return DB.query(query,parameters)
       .then(function(result){
          return DB.getAll(result);
       });

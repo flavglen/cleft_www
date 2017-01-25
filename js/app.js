@@ -197,7 +197,7 @@ if (window.cordova) {
       views: {
         'menuContent': {
           templateUrl: 'templates/talk_all_listing.html',
-          controller: 'PlaylistsCtrl'
+          controller: 'talkListCtrl'
         }
       }
     })
