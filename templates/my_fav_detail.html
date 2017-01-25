@@ -1,15 +1,15 @@
 <ion-view view-title="My Favourites">
     <ion-content>
-        {{myAttendingList}}
-         <div class = "row home_row_comittee all_speakers all_speaker_listing full_talk_list">
+        
+         <div ng-repeat="myattend in myAttendingList" class = "row home_row_comittee all_speakers all_speaker_listing full_talk_list">
          <div class = "col text-center"  >
 			  <div class="list card">
 			    <div class="item item-body committee_outer">
-				  <h3><b>Detailes talk topic</b></h3>
-				  <p class="comit_loc"><span>By: </span>Bob The Builder 4</p>
-				  <p class="comit_loc"><span>Time: </span>09:00 AM TO 09:45 AM</p>
-				  <p class="comit_loc"><span>Date: </span>8th Feb</p>
-				  <p class="comit_loc"><span>Hall: </span>HALL B</p>
+				  <h3><b>{{myattend.title}}</b></h3>
+				  <p class="comit_loc"><span>By: </span>{{myattend.Name}}</p>
+				  <p class="comit_loc"><span>Time: </span>{{myattend.Duration}}</p>
+				  <p class="comit_loc"><span>Date: </span>{{myattend.Day}}</p>
+				  <p class="comit_loc"><span>Hall: </span>{{myattend.Hall}}</p>
 			    </div>
 			  </div> 
 			</div>

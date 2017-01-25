@@ -217,8 +217,8 @@ $scope.loginSkip=function(){
 
 .controller('MyattendCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb,$rootScope) {
 
-
-  cleftdb.myAttend($rootScope.userEmail).then(function(result){
+/*GET ALL MY ATTENDINF TALKS*/
+  cleftdb.myAttend().then(function(result){
                    $scope.myAttendingList=result;
                    console.log(result);
               },function (error) {
