@@ -227,7 +227,7 @@ if (window.cordova) {
       views: {
         'menuContent': {
           templateUrl: 'templates/my_fav_detail.html',
-          controller: 'PlaylistsCtrl'
+          controller: 'MyattendCtrl'
         }
       }
     })

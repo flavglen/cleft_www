@@ -215,6 +215,20 @@ $scope.loginSkip=function(){
 
 })
 
+.controller('MyattendCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb,$rootScope) {
+
+
+  cleftdb.myAttend($rootScope.userEmail).then(function(result){
+                   $scope.myAttendingList=result;
+                   console.log(result);
+              },function (error) {
+                  alert(error);
+   });
+
+
+})
+
+
 .controller('singleTalkDetailCtrl', function($scope, $state,$stateParams,$ionicViewService,cleftdb) {
 
   var pk_talk=$stateParams.talkid;

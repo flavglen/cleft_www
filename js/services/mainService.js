@@ -171,6 +171,18 @@ App.factory('cleftdb', function($cordovaSQLite, DB) {
       });
   }
 
+  /*FETCH ALL MY ATTENDING TALKS*/
+  self.myAttend = function(email) {
+     var parameters = [email];
+
+     console.log(email);
+    return DB.query("select *  from cleft_master  CM JOIN attending ATN ON ATN.fk_cleft = CM.pk_cleft")
+      .then(function(result){
+         return DB.getAll(result);
+      });
+  }
+
+
   
 
 
